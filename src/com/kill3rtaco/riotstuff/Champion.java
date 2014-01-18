@@ -10,7 +10,7 @@ public class Champion {
 	
 	private static void printChampion(JSONObject jo) {
 		try {
-			System.out.println("Name:                     " + jo.getString("name"));
+			System.out.println(jo.getString("name"));
 			System.out.println("--------------------------");
 			System.out.println("Active:                   " + jo.getBoolean("active"));
 			System.out.println("AD Rating:                " + jo.getInt("attackRank"));
@@ -42,7 +42,7 @@ public class Champion {
 			JSONArray champs = getAllChamps(freeToPlay);
 			for(int i = 0; i < champs.length(); i++) {
 				printChampion(champs.getJSONObject(i));
-				System.out.println("\n=========================================================\n");
+				System.out.println("\n===================================\n");
 			}
 		} catch (JSONException e) {
 			e.printStackTrace();
