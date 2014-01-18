@@ -19,7 +19,7 @@ public class RiotStuff {
 	public static final String	BASE_URL	= "http://prod.api.pvp.net/api/lol/" + REGION + "/";
 	
 	// ;D
-	public static final String	API_KEY		= "f72e897c-9c9f-4b07-b66b-5b2b48133c76";
+	public static final String	API_KEY		= "";
 	
 	public static JSONObject getJSONObject(String url) {
 		try {
